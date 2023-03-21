@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 2px;
+  background-image: url(./Images/cocktail2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  border: 2px solid transparent;
+  margin-top: 10%;
+  padding: 2% 4%;
+  border-radius: 40px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Dodao bijelu pozadinu s polu-prozirnošću /
+  max-width: 800px;
+  margin: 0 auto; / Centrira sadržaj na sredini ekrana */
+  transition: transform 0.8s;
+}
+
+.myInput {
+  border: none;
+  width: 150px;
+  height: 37px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+.myInput:hover {
+  width: 240px;
+}
+
+.btnSearch {
+  cursor: pointer;
+  transition: transform 0.8s;
+  background-color: #2e89cc;
+  color: #fff;
+  border-radius: 40px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.btnSearch:hover {
+  transform: scale(1.1);
+  background-color: #1c5b82;
+}
+
+.coctail {
+  color: #2e89cc;
+  margin-left: 1%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.coctailList {
+  display: flex; /* Dodao flex za bolje pozicioniranje */
+  flex-wrap: wrap; /* Omogućava prelamanje elemenata na novi red ako je potrebno */
+  justify-content: center; /* Centrira elemente u horizontalnom smjeru */
+  max-width: 800px; /* Definira maksimalnu širinu za prikaz elemenata */
+  margin: 20px auto; /* Centrira elemente na sredini ekrana */
+}
+
+.coctailList .coctail {
+  width: 200px; /* Definira širinu svakog pojedinog elementa */
+  height: 200px; /* Definira visinu svakog pojedinog elementa */
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Dodaje sjenu */
+  transition: transform 0.5s, margin-left 0.5s;
+}
+
+.coctailList .coctail:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Povećava veličinu elementa na hover */
+  margin-left: 30px; /* Pomiče element udesno na hover */
+}
+
+.coctailList .coctail h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px; /* Dodaje malo prostora ispod teksta */
+}
+
+.coctailDetails {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.coctailDetails h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.coctailDetails img {
+  max-width: 100%; /* Dodajemo maksimalnu širinu za sliku */
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.coctailDetails p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.btnBack {
+  cursor: pointer;
+  background-color: #2e89cc;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  transition: transform 0.8s;
+}
+
+.btnBack:hover {
+  transform: translateY(-5px); /* Pomiče gumb prema gore na hover */
+}
